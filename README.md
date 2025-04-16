@@ -25,14 +25,18 @@ These are the basic steps for working with the starter. For detailed guidance on
 1. [Generate a new repository](https://github.com/n8n-io/n8n-nodes-starter/generate) from this template repository.
 2. Clone your new repo:
    ```
-   git clone https://github.com/<your organization>/<your-repo-name>.git
+   $ git clone https://github.com/<your organization>/<your-repo-name>.git
    ```
 3. Run `pnpm i` to install dependencies.
 4. Open the project in your editor.
 5. Browse the examples in `/nodes` and `/credentials`. Modify the examples, or replace them with your own nodes.
 6. Update the `package.json` to match your details.
+7. Update the `tsconfig.docker.json` to match your details.
 7. Run `pnpm lint` to check for errors or `pnpm lintfix` to automatically fix errors when possible.
-8. Test your node locally. Refer to [Run your node locally](https://docs.n8n.io/integrations/creating-nodes/test/run-node-locally/) for guidance.
+8. Use your custom node locally in Docker using
+   ```
+   $ npm run deploy:docker
+   ```
 9. Replace this README with documentation for your node. Use the [README_TEMPLATE](README_TEMPLATE.md) to get started.
 10. Update the LICENSE file to use your details.
 11. [Publish](https://docs.npmjs.com/packages-and-modules/contributing-packages-to-the-registry) your package to npm.
