@@ -1,6 +1,6 @@
 {
     "extends": "./tsconfig.json",
 		"compilerOptions": {
-		"outDir": "../nodes/n8n-nodes-<...>/dist"
+		"outDir": "../../nodes/n8n-nodes-<...>/dist"
 	}
 }
